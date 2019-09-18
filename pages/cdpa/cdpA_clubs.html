@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Mon Club Photo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../../css/tab3.css" rel="stylesheet" type="text/css"/>
+        <style type="text/css">
+      body {
+        margin:0;
+        padding:0;
+        background: url(../../images/pellicule2.jpg) no-repeat center fixed; 
+        background-size: cover; /* version standardisée */
+      }
+    </style>
+  </head>
+
+  <body>
+
+  	<header class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <img src="../../images/banniere.png" style="height: 150px" class="img-fluid" alt="Responsive image">
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="row">
+            <div class="col-6 col-md-12">
+              <h4>Nous sommes le : <span id="date"></span></h4>
+            </div>
+            <div class="col-6 col-md-12">
+              <button type="button" class="btn btn-secondary">Accès membre</button>
+            </div>
+            <div class="col-12 col-md-12">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+                  <li class="breadcrumb-item">Le CDPA</li>
+                  <li class="breadcrumb-item active" aria-current="page">Liste des clubs</li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars"
+              aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="../../index.html">Mon Club Photo</a>
+
+      <div class="collapse navbar-collapse" id="navbars">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown"
+               aria-haspopup="true" aria-expanded="false">Le Club</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="../club/club_activites.html">Activités</a>
+              <a class="dropdown-item" href="../club/club_album.html">Album photo</a>
+              <a class="dropdown-item" href="../club/club_contact.html">Contactez nous</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="dropdown02"
+               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Le CDPA</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown02">
+              <a class="dropdown-item" href="cdpA_present.html">Présentation</a>
+              <a class="dropdown-item" href="cdpA_expos.html">Les expositions</a>
+              <a class="dropdown-item" href="#">Les clubs</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../liens.html">Quelques liens</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="container" style="margin-top: 20px">
+
+      <div>
+        <h3>Liste des clubs adhérents au CDPA</h3>
+        <table class="table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Nom du club</th>
+              <th scope="col">Ville</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <td colspan="3">
+                Cliquez sur voir + pour le détail du club
+              </td>
+            </tr>
+          </tfoot>
+          <tbody id="clubs">
+              <tr><td>Photo Club 01</td><td>Ville 01</td><td><button>voir +</button></td></tr>
+              <tr><td>Photo Club 02</td><td>Ville 02</td><td><button>voir +</button></td></tr>
+              <tr><td>Photo Club 03</td><td>Ville 03</td><td><button>voir +</button></td></tr>
+              <tr><td>Photo Club 04</td><td>Ville 04</td><td><button>voir +</button></td></tr>
+              <tr><td>Photo Club 05</td><td>Ville 05</td><td><button>voir +</button></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </main><!-- /.container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="../../dist/js/jquery-3.3.1.slim.min.js"><\/script>')</script>
+   <script src="../../dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
